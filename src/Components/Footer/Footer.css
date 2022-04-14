@@ -1,0 +1,65 @@
+.footer{
+    padding-left: 75px;
+    padding-top: 45px;
+}
+.footer > div:first-child{
+    display: flex;
+}
+.footer > div > *{
+    width: 33%;
+}
+.footer > div > div > div:first-child > p{
+    background: linear-gradient(to right, aqua, #0FCFEC);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 680;
+}
+.footer .brandIcon > *{
+    border: 1px solid aqua;
+    border-radius: 17px;
+    padding: 4px;
+    height: 32px;
+    width: 32px;
+    margin-right: 8px;
+    color: aqua;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    transition: .5s;
+}
+.footer .brandIcon > *:hover{
+    background-color: aqua;
+    color: white;
+}
+.footer .callNow{
+    background-image: linear-gradient(to right, aqua, #0FCFEC);
+    width: 140px;
+    padding: 9px 9px;
+    color: white;
+    border-radius: 4.5px;
+}
+.footer small{
+    color: gray;
+    font-weight: 580;
+}
+
+@media only screen and (max-width: 751px) {
+    .footer{
+        padding-left: 21px;
+    }
+    .footer .brandIcon > *{
+        margin-right: 5px;
+        height: 21px;
+        width: 21px;
+    }
+    .footer .callNow{
+        width: 97px;
+        padding: 5px 5px;
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 421px) {
+    .footer small{
+        font-size: 10px;
+    }
+}
